@@ -1,0 +1,9 @@
+This is a sample file for testing path traversal vulnerabilities.
+
+You can access this file through:
+http://localhost:3000/download?file=sample.txt
+
+However, you can also use path traversal to access other files:
+http://localhost:3000/download?file=../app.js
+http://localhost:3000/download?file=../package.json
+http://localhost:3000/download?file=../../../../etc/passwd (on Unix systems)
